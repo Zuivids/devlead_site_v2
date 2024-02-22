@@ -47,6 +47,7 @@
     width: 100%;
 
 }
+/* Content */
 .content{
     width: 100%;
     position: absolute;
@@ -61,3 +62,41 @@
     margin-top: 80px;
 
 }
+/* Footer  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .col-md-3 h2 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .col-md-3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .col-md-3 a:hover {
+    color: #ddd;
+    
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .copyright p {
+    font-size: 0.8em;
+  }
