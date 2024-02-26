@@ -1,39 +1,445 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DevLead</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="banner">
-            <div class="navbar">
-                <img src="logo.png" class="logo">
-                <ul>
-                    <li><a href="Services">Services</a></li>
-                    <li><a href="Solutions">Solutions</a></li>
-                    <li><a href="About Us">About Us</a></li>
-                    <li><a href="Contact Us">Contact Us</a></li>
-                </ul>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <a href="index.html" class="home-navlink">
+              <img alt="image" src="public/logo-200h.png" class="home-image" />
+            </a>
+            <div class="home-links-container">
+              <a href="#aboutUsSection" id="aboutUs" class="home-link">
+                About Us
+              </a>
+              <a href="#servicesSection" class="home-link01">Services</a>
+              <a href="#productsSection" class="home-link02">Products</a>
+              <a href="portfolio.html" class="home-link03">
+                Portfolio&nbsp;&nbsp;
+              </a>
+              <a href="#contactUsSection" class="home-link04">Contact Us</a>
             </div>
-            <div class="content">
-                <h1>Software development with <br>outstanding quality at <br>a competitive price.</h1>
+            <div data-role="BurgerMenu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                ></path>
+              </svg>
             </div>
-        </div>
-    </body>
-    <footer>
-        <div class="container">
-            <div class="Contact">
-              <h2>Contact</h2>
-              <address>
-                Mazā Krasta iela 83,<br>
-                Rīga, LV-1003<br>
-                <a href="info@devlead.lv">info@devlead.lv</a><br>
-                <a href="+37120036541">+371 20036541</a>
-              </address>
+            <div data-role="MobileMenu" class="home-mobile-menu">
+              <div class="home-container01">
+                <span class="Card-Heading home-heading">Logo</span>
+                <div data-role="CloseMobileMenu" class="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-links-container1">
+                <span class="home-link05 Navbar-Link">About</span>
+                <span class="home-link06 Navbar-Link">Experience</span>
+                <span class="home-link07 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
             </div>
           </div>
-        <div class="copyright">
-          <p>&copy; Copyright © 2024. SIA DevLead. All rights reserved</p>
         </div>
-    </footer>
+        <div class="home-section-separator"></div>
+        <div class="home-section-separator1"></div>
+        <div class="home-container02">
+          <div class="home-container03">
+            <div class="home-hero">
+              <div class="home-hero-text-container">
+                <h1 class="home-heading1 Section-Heading">
+                  Software development with outstanding quality at a competitive
+                  price.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-about-us">
+          <div id="aboutUsSection" class="home-max-content-width-container">
+            <div class="home-heading-container">
+              <h1 class="Section-Heading home-text">About us</h1>
+            </div>
+            <div class="home-content-container">
+              <div class="home-about-1">
+                <div class="home-container04">
+                  <svg viewBox="0 0 1024 1024" class="home-icon04">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text01 Card-Text">
+                    Lorem ipsum dolor sit amet aulla quis sem at nibh elementum
+                    imperdiet.
+                  </span>
+                </div>
+                <div class="home-container05">
+                  <svg viewBox="0 0 1024 1024" class="home-icon06">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text02 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+                <div class="home-container06">
+                  <svg viewBox="0 0 1024 1024" class="home-icon08">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text03 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+              </div>
+              <div class="home-about-11">
+                <div class="home-container07">
+                  <svg viewBox="0 0 1024 1024" class="home-icon10">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text04 Card-Text">
+                    <span>
+                      Lorem ipsum dolor sit amet aulla quis sem at nibh
+                      elementum
+                    </span>
+                    <br />
+                    <span></span>
+                  </span>
+                </div>
+                <div class="home-container08">
+                  <svg viewBox="0 0 1024 1024" class="home-icon12">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text08 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+                <div class="home-container09">
+                  <svg viewBox="0 0 1024 1024" class="home-icon14">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text09 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="servicesSection" class="home-services">
+          <div class="home-heading-container1">
+            <h1 class="home-text10">
+              <span class="home-text11 Section-Heading">Services</span>
+              <br />
+            </h1>
+          </div>
+          <div class="home-services1">
+            <div class="home-card">
+              <div class="home-icon-container">
+                <img
+                  alt="image"
+                  src="public/cloud%20solutions-200h.png"
+                  class="home-image1"
+                />
+              </div>
+              <div class="home-content-container1">
+                <span class="home-heading2 Card-Heading">Cloud solutions</span>
+                <span class="home-text13 Card-Text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                </span>
+              </div>
+            </div>
+            <div class="home-card1">
+              <div class="home-icon-container1">
+                <img
+                  alt="image"
+                  src="public/web%20development-200h.png"
+                  class="home-image2"
+                />
+              </div>
+              <div class="home-content-container2">
+                <span class="home-heading3 Card-Heading">Web development</span>
+                <span class="home-text14 Card-Text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                </span>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-icon-container2">
+                <img
+                  alt="image"
+                  src="public/data%20archiving-200h.png"
+                  class="home-image3"
+                />
+              </div>
+              <div class="home-content-container3">
+                <span class="home-heading4 Card-Heading">Data archiving</span>
+                <span class="home-text15 Card-Text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam.c Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="productsSection" class="home-products">
+          <div class="home-max-content-width-container1">
+            <div class="home-heading-container2">
+              <h1 class="Section-Heading home-text16">Products</h1>
+            </div>
+            <div class="home-content-container4">
+              <div class="home-about-12">
+                <div class="home-container10">
+                  <svg viewBox="0 0 1024 1024" class="home-icon16">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text17 Card-Text">
+                    Lorem ipsum dolor sit amet aulla quis sem at nibh elementum
+                    imperdiet.
+                  </span>
+                </div>
+                <div class="home-container11">
+                  <svg viewBox="0 0 1024 1024" class="home-icon18">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text18 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+                <div class="home-container12">
+                  <svg viewBox="0 0 1024 1024" class="home-icon20">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text19 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+              </div>
+              <div class="home-about-13">
+                <div class="home-container13">
+                  <svg viewBox="0 0 1024 1024" class="home-icon22">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text20 Card-Text">
+                    <span>
+                      Lorem ipsum dolor sit amet aulla quis sem at nibh
+                      elementum
+                    </span>
+                    <br />
+                    <span></span>
+                  </span>
+                </div>
+                <div class="home-container14">
+                  <svg viewBox="0 0 1024 1024" class="home-icon24">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text24 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+                <div class="home-container15">
+                  <svg viewBox="0 0 1024 1024" class="home-icon26">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text25 Card-Text">
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="clientsSection" class="home-clients"></div>
+        <div class="home-clients1">
+          <div class="home-heading-container3">
+            <h1 class="home-text26 Section-Heading">Clients</h1>
+          </div>
+          <div class="home-logo-container">
+            <img alt="image" src="public/default-img.svg" class="home-logo" />
+            <img alt="image" src="public/default-img.svg" class="home-logo1" />
+            <img alt="image" src="public/default-img.svg" class="home-logo2" />
+            <img alt="image" src="public/default-img.svg" class="home-logo3" />
+            <img alt="image" src="public/default-img.svg" class="home-logo4" />
+          </div>
+        </div>
+        <div class="home-section-separator2"></div>
+        <div class="home-section-separator3"></div>
+        <div id="contactUsSection" class="home-contact-us">
+          <img alt="image" src="public/default-img.svg" class="home-image4" />
+          <div class="home-container16">
+            <h1 class="home-text27 Section-Heading">Contact Us</h1>
+            <div class="home-heading-container4">
+              <span class="home-text28">E-mail</span>
+            </div>
+            <input
+              type="text"
+              required="true"
+              placeholder="info@devlead.lv"
+              class="home-textinput Section-Text input"
+            />
+            <div class="home-heading-container5">
+              <span class="home-text29">Phone number</span>
+            </div>
+            <input
+              type="text"
+              placeholder="+371 20036541"
+              class="home-textinput1 Section-Text input"
+            />
+            <span class="home-text30">Message:</span>
+            <input
+              type="text"
+              required="true"
+              placeholder=" "
+              class="home-textinput2 input"
+            />
+            <button class="home-button button">Submit</button>
+          </div>
+        </div>
+        <div class="home-section-separator4"></div>
+        <div class="home-footer-container">
+          <div class="home-footer">
+            <div class="home-container17">
+              <span class="home-text31">Mazā krasta iela 83, Rīga LV-1003</span>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link09"
+              >
+                +37120036541
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link10"
+              >
+                <span>Info@devlead.lv</span>
+                <br />
+              </a>
+            </div>
+            <div class="home-copyright-container">
+              <span class="home-link11">
+                Copyright © 2024. SIA DevLead. All rights reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
