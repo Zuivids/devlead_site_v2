@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pricing - Portfolio Page</title>
+    <meta property="og:title" content="Pricing - Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./pricing.css" rel="stylesheet" />
+
+      <div class="pricing-container">
+        <div data-role="Header" class="pricing-navbar-container">
+          <div class="pricing-navbar">
+            <a href="index.html" class="pricing-navlink">
+              <img
+                alt="image"
+                src="public/logo-200h.png"
+                class="pricing-image"
+              />
+            </a>
+            <div class="pricing-links-container">
+              <a
+                href="#aboutUsSection"
+                id="aboutUs"
+                class="pricing-about-us-link"
+              >
+                About Us
+              </a>
+              <span class="pricing-services-link">
+                <span class="pricing-text">Services</span>
+                <br />
+              </span>
+              <span class="pricing-tech-stack-link">
+                <span>Tech Stack</span>
+                <br />
+              </span>
+              <a href="#clientsSection" class="pricing-our-clients-link">
+                <span class="pricing-text04">Our Clients</span>
+                <br />
+              </a>
+              <a href="#contactUsSection" class="pricing-contact-us-link">
+                Contact Us
+              </a>
+              <a href="#pricingSection" class="pricing-get-pricing button">
+                Get Pricing
+              </a>
+            </div>
+            <div data-role="BurgerMenu" class="pricing-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="pricing-icon">
+                <path
+                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                ></path>
+              </svg>
+            </div>
+            <div data-role="MobileMenu" class="pricing-mobile-menu">
+              <div class="pricing-container01">
+                <span class="Card-Heading pricing-heading">Logo</span>
+                <div data-role="CloseMobileMenu" class="pricing-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="pricing-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="pricing-links-container1">
+                <span class="pricing-link Navbar-Link">About</span>
+                <span class="pricing-link1 Navbar-Link">Experience</span>
+                <span class="pricing-link2 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-section-separator"></div>
+        <div class="pricing-section-separator1"></div>
+        <div id="pricingSection" class="pricing-pricing">
+          <div class="pricing-max-content-width-container">
+            <div class="pricing-heading-container">
+              <h1 class="pricing-text06">
+                Request an IT project cost estimate
+              </h1>
+            </div>
+            <span class="pricing-text07">
+              1.&nbsp;What type of software solution would you like to develop
+              with DevLead?
+            </span>
+            <div class="pricing-container02">
+              <div class="pricing-container03">
+                <div class="pricing-container04">
+                  <div class="pricing-container05">
+                    <input type="checkbox" class="pricing-checkbox" />
+                    <span class="pricing-text08">Mobile</span>
+                  </div>
+                  <div class="pricing-container06">
+                    <input type="checkbox" class="pricing-checkbox01" />
+                    <span class="pricing-text09">
+                      <span>Web</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="pricing-text12">
+              2.What is the current stage of your software development process?
+            </span>
+            <div class="pricing-container07">
+              <div class="pricing-container08">
+                <div class="pricing-container09">
+                  <div class="pricing-container10">
+                    <div class="pricing-container11">
+                      <div class="pricing-container12">
+                        <input type="checkbox" class="pricing-checkbox02" />
+                        <span class="pricing-text13">Idea</span>
+                      </div>
+                      <div class="pricing-container13">
+                        <input type="checkbox" class="pricing-checkbox03" />
+                        <span class="pricing-text14">
+                          Prototype/Specification
+                        </span>
+                      </div>
+                      <div class="pricing-container14">
+                        <input type="checkbox" class="pricing-checkbox04" />
+                        <span class="pricing-text15">
+                          <span>Design Solution</span>
+                          <br />
+                        </span>
+                      </div>
+                      <div class="pricing-container15">
+                        <input type="checkbox" class="pricing-checkbox05" />
+                        <span class="pricing-text18">Text</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="pricing-text19">
+              3.Do you need a professional consultation from any of the
+              specialists below?
+            </span>
+            <div class="pricing-container16">
+              <div class="pricing-container17">
+                <div class="pricing-container18">
+                  <div class="pricing-container19">
+                    <div class="pricing-container20">
+                      <input type="checkbox" class="pricing-checkbox06" />
+                      <span class="pricing-text20">Project Maneger</span>
+                    </div>
+                    <div class="pricing-container21">
+                      <input type="checkbox" class="pricing-checkbox07" />
+                      <span class="pricing-text21">
+                        <span>Business Analyst</span>
+                        <br />
+                      </span>
+                    </div>
+                    <div class="pricing-container22">
+                      <input type="checkbox" class="pricing-checkbox08" />
+                      <span class="pricing-text24">
+                        <span>UI/UX Designer</span>
+                        <br />
+                      </span>
+                    </div>
+                    <div class="pricing-container23">
+                      <input type="checkbox" class="pricing-checkbox09" />
+                      <span class="pricing-text27">
+                        <span>Architect</span>
+                        <br />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="pricing-button button">
+              <span class="pricing-text30">
+                <span>Get Pricing</span>
+                <br />
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="pricing-clients"></div>
+        <div id="clientsSection" class="pricing-clients1">
+          <div class="pricing-heading-container1">
+            <h1 class="pricing-text33">
+              <span class="pricing-text34 Section-Heading">Our Clients</span>
+              <br />
+            </h1>
+          </div>
+          <div class="pricing-logo-container">
+            <img
+              alt="image"
+              src="public/default-img.svg"
+              class="pricing-logo"
+            />
+            <img
+              alt="image"
+              src="public/default-img.svg"
+              class="pricing-logo1"
+            />
+            <img
+              alt="image"
+              src="public/default-img.svg"
+              class="pricing-logo2"
+            />
+            <img
+              alt="image"
+              src="public/default-img.svg"
+              class="pricing-logo3"
+            />
+            <img
+              alt="image"
+              src="public/default-img.svg"
+              class="pricing-logo4"
+            />
+          </div>
+        </div>
+        <div class="pricing-section-separator2"></div>
+        <div class="pricing-section-separator3"></div>
+        <div id="contactUsSection" class="pricing-contact-us">
+          <img
+            alt="image"
+            src="public/default-img.svg"
+            class="pricing-image1"
+          />
+          <div class="pricing-container24">
+            <h1 class="pricing-text36 Section-Heading">Get in touch</h1>
+            <div class="pricing-heading-container2">
+              <span class="pricing-text37">E-mail</span>
+            </div>
+            <input
+              type="text"
+              required="true"
+              placeholder="info@devlead.lv"
+              class="pricing-textinput Section-Text input"
+            />
+            <div class="pricing-heading-container3">
+              <span class="pricing-text38">Phone number</span>
+            </div>
+            <input
+              type="text"
+              placeholder="+371 20036541"
+              class="pricing-textinput1 Section-Text input"
+            />
+            <span class="pricing-text39">Message:</span>
+            <input
+              type="text"
+              required="true"
+              placeholder=" "
+              class="pricing-textinput2 input"
+            />
+            <button class="pricing-button1 button">Submit</button>
+          </div>
+        </div>
+        <div class="pricing-section-separator4"></div>
+        <div class="pricing-footer-container">
+          <div class="pricing-footer">
+            <div class="pricing-container25">
+              <span class="pricing-text40">
+                Mazā krasta iela 83, Rīga LV-1003
+              </span>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="pricing-link4"
+              >
+                +37120036541
+              </a>
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="pricing-link5"
+              >
+                <span>Info@devlead.lv</span>
+                <br />
+              </a>
+            </div>
+            <div class="pricing-copyright-container">
+              <span class="pricing-link6">
+                Copyright © 2024. SIA DevLead. All rights reserved
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
