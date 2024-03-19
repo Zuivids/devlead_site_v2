@@ -273,18 +273,7 @@
   margin-bottom: 32px;
 }
 .home-text012 {
-  color: #ffffff;
-  width: 70%;
-  font-size: 1.4rem;
-  box-shadow: 5px 5px 10px 0px #777777;
-  font-style: normal;
   text-align: center;
-  font-family: "Poppins";
-  font-weight: 700;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-image: linear-gradient(to left, #bdc3c7 0%, #2c3e50 100%);
 }
 .home-text013 {
   color: #000000;
@@ -756,17 +745,6 @@
 .home-text025 {
   font-size: 3rem;
   margin-bottom: 32px;
-}
-.home-text028 {
-  color: #ffffff;
-  width: 70%;
-  box-shadow: 5px 5px 10px 0px #777777;
-  text-align: center;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius8);
-  margin-bottom: var(--dl-space-space-tripleunit);
-  background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
 }
 .home-container10 {
   flex: 0 0 auto;
@@ -1869,18 +1847,6 @@
   .home-text009 {
     font-size: 3rem;
   }
-  .home-text012 {
-    color: rgb(255, 255, 255);
-    font-size: 1.4rem;
-    box-shadow: rgb(72, 67, 67) 5px 5px 10px 0px;
-    font-style: normal;
-    font-family: Poppins;
-    font-weight: 700;
-    border-color: var(--dl-color-gray-black);
-    border-width: 1px;
-    border-radius: var(--dl-radius-radius-radius8);
-    background-image: linear-gradient(to left, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 100%);
-  }
   .home-text013 {
     color: var(--dl-color-gray-black);
     font-size: 1.3rem;
@@ -2014,18 +1980,6 @@
   }
   .home-text025 {
     font-size: 3rem;
-  }
-  .home-text028 {
-    color: #ffffff;
-    box-shadow: 5px 5px 10px 0px #777777;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-color: var(--dl-color-gray-black);
-    border-width: 1px;
-    margin-right: 0px;
-    border-radius: var(--dl-radius-radius-radius8);
-    margin-bottom: var(--dl-space-space-tripleunit);
-    background-image: linear-gradient(to left, #bdc3c7 0%, #2c3e50 100%);
   }
   .home-heading08 {
     text-align: center;
@@ -2292,11 +2246,7 @@
     align-self: flex-start;
   }
   .home-text012 {
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-family: Poppins;
-    font-weight: 700;
+    text-align: center;
   }
   .home-text013 {
     color: var(--dl-color-gray-black);
@@ -2322,6 +2272,9 @@
   }
   .home-about-1 {
     width: 581px;
+  }
+  .home-text028 {
+    text-align: center;
   }
   .home-text063 {
     font-style: normal;
@@ -2513,9 +2466,6 @@
     text-align: center;
   }
   .home-text009 {
-    text-align: center;
-  }
-  .home-text012 {
     text-align: center;
   }
   .home-text013 {
@@ -2758,12 +2708,6 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: 32px;
-  }
-  .home-text012 {
-    color: var(--dl-color-gray-700);
-    font-size: 1.15rem;
-    align-self: center;
-    text-align: center;
   }
   .home-text013 {
     color: var(--dl-color-gray-700);

@@ -73,6 +73,24 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+.testStyle {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Overpass;
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+.Header {
+  font-size: 1.15rem;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
 .Section-Text {
   font-size: 18px;
   font-family: Playfair Display;
@@ -133,28 +151,12 @@
   text-transform: none;
   text-decoration: none;
 }
-.Header {
-  font-size: 1.15rem;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 700;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.testStyle {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Overpass;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
+
 .containerTech{
   width: 1200px;
   height: 800px;
-  background-color: rgb(14, 125, 129);
+  /* background-color: rgb(14, 125, 129); */
+  background-image: linear-gradient(to left, #bdc3c7 0%, #69798a 100%);
   padding: 30px;
   box-shadow: 0 2px 16px rgba(0,0,0,0);
   border-radius: 20px ;
@@ -164,7 +166,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid rgb(1, 98, 105);
+  border-bottom: 2px solid rgb(15, 134, 99);
   position: relative;
 }
 .tab_box .tab_btn{
@@ -178,7 +180,7 @@
   
 }
 .tab_box .tab_btn.active{
-  color: #052c97; ;
+  color: #27af82; ;
 }
 .content_box{
   padding: 20px;
