@@ -2184,7 +2184,9 @@
     font-weight: 700;
   }
   .home-text135 {
+    font-style: normal;
     font-family: Overpass;
+    font-weight: 400;
   }
   .home-iframe {
     width: 476px;
@@ -2240,6 +2242,9 @@
   }
   .home-contact-us-link {
     font-size: 18px;
+  }
+  .home-container02 {
+    height: 100%;
   }
   .home-heading01 {
     width: 654px;

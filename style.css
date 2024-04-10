@@ -151,7 +151,6 @@
   text-transform: none;
   text-decoration: none;
 }
-
 .containerTech{
   width: 1200px;
   height: 800px;
@@ -177,7 +176,6 @@
   border: none;
   padding: 18px;
   cursor: pointer;
-  
 }
 .tab_box .tab_btn.active{
   color: #27af82; ;
@@ -188,7 +186,6 @@
 .content_box .content{
   display: none;
   animation: moving .3s ease;
-  
 }
 @keyframes moving {
   from{transform: translateX(50px);opacity: 0;}
@@ -196,11 +193,9 @@
 }
 .content_box .content.active{
   display: block;
-  
 }
 .content_box .content h2{
   margin-bottom: 10px;
-
 }
 
 .line{
