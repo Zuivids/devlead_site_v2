@@ -28,6 +28,32 @@
   --dl-space-space-doubleunit: 16px;
   --dl-space-space-tripleunit: 24px;
 }
+.aboutUsTextStyle {
+  font-size: 16px;
+  font-family: "Overpass";
+  font-weight: 700;
+  line-height: 1;
+  text-transform: none;
+  text-decoration: none;
+}
+.aboutUsTextApproach {
+  font-size: 19px;
+  font-family: Overpass;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: none;
+  text-decoration: none;
+}
+.aboutUsHeader {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-decoration: none;
+}
 .teleport-show {
   display: flex !important;
   transform: none !important;
