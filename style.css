@@ -234,3 +234,17 @@
   border-radius: 10px;
   transition: all .3s ease-in-out;
 }
+.techStackHeader{
+  color: #27af82; ;
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: bold;
+
+}
+.techStackText{
+  color: #ffff;
+  font-size: 15px;
+  font-family: Overpass;
+  vertical-align: middle;
+  
+}

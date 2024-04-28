@@ -243,11 +243,12 @@
   text-decoration: none;
 }
 .home-get-pricing {
-  color: #ffffff;
-  font-family: "Poppins";
-  border-color: #463e3e;
-  text-decoration: none;
-  background-color: #1c5361;
+  color: rgb(255, 255, 255);
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+    border-color: #463e3e;
+    background-color: rgb(28, 83, 97);
 }
 .home-burger-menu {
   display: none;
