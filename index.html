@@ -2,7 +2,7 @@
 <html lang="en"
   ><head
     ><title>DevLead.lv</title
-    ><link rel="icon" type="image/png" href="public/favicon.png">
+    ><link rel=" icon" type="image/png" href="public/favicon.png">
     <meta property="og:title" content="DevLead.lv" /><meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" /><meta
@@ -256,7 +256,7 @@
             ><div class="home-content-container06"
               ><img
                 alt="image"
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&amp;w=600&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="public/Photo2.jpg"
                 loading="eager"
                 class="home-image07"
               /><div class="home-about-1"
@@ -673,26 +673,30 @@ range of digital communication services, including IP telephony.</span
               <div class="home-container20">
             <span class="home-text139">Contact us for a free consultation</span>
             <div class="home-container21">
-              <form target="_blank" action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New email from DevLead.lv">
-                <div class="home-container22">
-                    <input type="text" name="name" placeholder="Name*" class="home-textinput input" required/>
-                    <input type="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
-                </div>
+              <form type="_blank" id='info-form' action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
+        
+        <input type="hidden" name="_subject" value="New email from DevLead.lv">
+        <div class="home-container22">
+          <input type="text" id="name" name="name" placeholder="Name*" class="home-textinput input" required/>
+          <input type="text" id="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
+        </div>
 
-                <div class="home-container23">
-                    <input type="text" name="message" placeholder="Number*" class="home-textinput2 input" />
-                    <input type="text" name="message" placeholder="Company*" class="home-textinput3 input" />
-                </div>
+        <div class="home-container23">
+          <input type="text" id="number" placeholder="Number*" class="home-textinput2 input" />
+          <input type="text" id="company" placeholder="Company*" class="home-textinput3 input" />
+        </div>
 
-                <div class="home-container24">
-                    <input type="text" name="message" placeholder="Please describe your project requirements*" class="home-textinput4 input" required/>
-                </div>
+        <div class="home-container24">
+          <input type="text" id="description" placeholder="Please describe your project requirements*" class="home-textinput4 input" required/>
+        </div>
 
-                <button type="submit" class="home-button button">
-                  <span class="home-text140">
-                    <span>Send request</button></span></span>
-                 </form>
+        <input  type="hidden" id="message" name="message" />
+
+        <button type="submit" onclick="formSubmit()" class="home-button button">
+          <span class="home-text140"><span>Send request</button></span></span>
+      
+       <div id="output"></div>
+      </form>
                  
               </div>
             </div>
@@ -745,7 +749,24 @@ range of digital communication services, including IP telephony.</span
                 all_content[index].classList.add('active');
                 })
             })
+           
+            function formSubmit() {
+              console.log("test");
+              const numberInput = document.getElementById("number").value;
+              const companyInput = document.getElementById("company").value;
+              const descriptionInput = document.getElementById("description").value;
 
+              const outputText = `<h2>Input:</h2>
+              <p>Number: ${numberInput}</p>
+              <p>Compnay: ${companyInput}</p>
+              <p>Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
+
+              document.getElementById("message").value = outputText;
+              console.log("test");
+
+              document.getElementById("info-form").submit();
+
+}   
     </script>
   </body>
 </html>
