@@ -751,7 +751,6 @@ range of digital communication services, including IP telephony.</span
             })
            
             function formSubmit() {
-              console.log("test");
               const numberInput = document.getElementById("number").value;
               const companyInput = document.getElementById("company").value;
               const descriptionInput = document.getElementById("description").value;
@@ -762,8 +761,6 @@ range of digital communication services, including IP telephony.</span
               <p>Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
 
               document.getElementById("message").value = outputText;
-              console.log("test");
-
               document.getElementById("info-form").submit();
 
 }   
