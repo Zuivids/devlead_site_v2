@@ -315,12 +315,11 @@
                   </div>
         
                   <input  type="hidden" id="message" name="message" />
-        
-                  <button type="submit" onclick="formSubmit()" class="home-button button">
-                    <span class="home-text140"><span>Send request</button></span></span>
-                
-                 <div id="output"></div>
-                </form>
+
+                  <button onclick="formSubmit2()" type="submit"  class="home-button button">
+                    <span class="home-text140"><span>Send request</span></span></button>
+                    <div id="output"></div>
+                  </form>
                    
                 </div>
               </div>
@@ -363,7 +362,7 @@
       </div>
     </div>
     <script>
-      function formSubmit() {
+      function formSubmit2() {
               const numberInput = document.getElementById("number").value;
               const companyInput = document.getElementById("company").value;
               const descriptionInput = document.getElementById("description").value;
@@ -371,9 +370,11 @@
               const outputText = `Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
 
               document.getElementById("message").value = outputText;
+              console.log(document.getElementById("message").value);
               document.getElementById("info-form2").submit();
             } 
-            function getPricing() {
+            
+      function getPricing() {
 
               const q11Input = document.getElementById("checkbox1-1").value;
               const q12Input = document.getElementById("checkbox1-2").value;
