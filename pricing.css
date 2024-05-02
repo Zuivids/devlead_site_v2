@@ -1218,9 +1218,10 @@
   height: 341px;
   display: flex;
   align-items: flex-start;
-  margin-left: 0px;
+  margin-left: 40px;
   flex-direction: column;
 }
+
 .home-container22 {
   flex: 0 0 auto;
   width: 100%;
@@ -1263,6 +1264,7 @@
   align-self: center;
   margin-top: var(--dl-space-space-unit);
   background-color: transparent;
+  margin-left: 110px;
   background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
 }
 .home-text140 {

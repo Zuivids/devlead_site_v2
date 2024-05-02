@@ -672,36 +672,39 @@ range of digital communication services, including IP telephony.</span
               ></iframe></div>
           <div class="FormDiv">
                 <span class="FormTitle">Contact us for a free consultation</span>
-            <div class="home-container21" FormDiv2>
-
-              <form target="_blank" id='info-form' action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
+            <div class="home-container21">
+              <form type="_blank" id='info-form' action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
+        
                 <input type="hidden" name="_subject" value="New email from DevLead.lv">
-
                 <div class="home-container22">
                   <input type="text" id="name" name="name" placeholder="Name*" class="home-textinput input" required/>
-                  <input type="text" id="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
+                   <input type="text" id="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
                 </div>
 
                 <div class="home-container23">
-                 <input type="text" id="number" placeholder="Number*" class="home-textinput2 input" required/>
+                  <input type="text" id="number" placeholder="Number*" class="home-textinput2 input" required/>
                   <input type="text" id="company" placeholder="Company*" class="home-textinput3 input" required/>
-                </div>
+                 </div>
 
                 <div class="home-container24">
                   <input type="text" id="description" placeholder="Please describe your project requirements*" class="home-textinput4 input" required/>
                 </div>
-                  <input type="hidden" id="message" name="message" />
-                <button type="submit" onclick="formSubmit()"  class="home-button button">
-                  <span class="home-text140"><span>Send request</button></span></span>
+
+                <input  type="hidden" id="message" name="message" />
+
+                <button type="submit" onclick="formSubmit()" class="formButton button">
+                <span class="home-text140"><span>Send request</button></span></span>
+      
               </form>
-              
             <div>
+
             </div>
             </div>
             </div>
         </div>
-                    </div></div></div
-        ><div class="home-section-separator4"></div
+
+        
+                    <div class="home-section-separator4"></div
         ><div class="home-footer-container"
           ><div class="home-footer"
             ><div class="home-container25"
@@ -728,38 +731,6 @@ range of digital communication services, including IP telephony.</span
         ></div
       ></div
     >
-    <script>
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-      
-      const tabs= document.querySelectorAll('.tab_btn');
-            const all_content= document.querySelectorAll('.content');
-
-            tabs.forEach((tab,index) =>{
-                tab.addEventListener('click', (e)=>{
-                    tabs.forEach(tab=>{tab.classList.remove('active')})
-                    tab.classList.add('active');
-
-                var line=document.querySelector('.line');
-                line.style.width = e.target.offsetWidth + "px";
-                line.style.left = e.target.offsetLeft + "px";
-
-                all_content.forEach(content=>{content.classList.remove('active')});
-                all_content[index].classList.add('active');
-                })
-            })
-           
-            function formSubmit() {
-              const numberInput = document.getElementById("number").value;
-              const companyInput = document.getElementById("company").value;
-              const descriptionInput = document.getElementById("description").value;
-
-              const outputText = `Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
-
-              document.getElementById("message").value = outputText;
-              document.getElementById("info-form").submit();
-
-            }   
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

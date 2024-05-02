@@ -4,10 +4,7 @@ function formSubmitPricing() {
     const companyInput = document.getElementById("company").value;
     const descriptionInput = document.getElementById("description").value;
   
-    const outputText = `<h2>Input:</h2>
-    <p>Number: ${numberInput}</p>
-    <p>Compnay: ${companyInput}</p>
-    <p>Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
+    const outputText = `Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
   
     document.getElementById("message2").value = outputText;
     document.getElementById("info-form").submit();
@@ -34,32 +31,27 @@ function formSubmitPricing() {
     const q35Input = document.getElementById("checkbox3-5").value;
 
 
-    const outputText = `<h2>Input:</h2>
-    <p>q11: ${q11Input}</p>
-    <p>q12: ${q12Input}</p>
-    <p>q13: ${q13Input}</p>
-    <p>q14: ${q14Input}</p>
-    <p>q15: ${q15Input}</p>
+    const outputText = `
+    What type of software solution would you like to develop with DevLead?:
+    ${q11Input} :Mobile
+    ${q12Input} :Web
+    ${q13Input} :Authentification
+    ${q14Input} :Software or Data Migration
+    ${q15Input} :System or Data Archiving
 
-    <p>q21: ${q21Input}</p>
-    <p>q22: ${q22Input}</p>
-    <p>q23: ${q23Input}</p>
-    <p>q24: ${q24Input}</p>
-    <p>q25: ${q25Input}</p>
+    What is the current stage of your software development process?:
+    ${q21Input} :Idea
+    ${q22Input} :Proof of Concept
+    ${q23Input} :Prototype
+    ${q24Input} :Specified or designed Solution
+    ${q25Input} :MVP
 
-    <p>q31: ${q31Input}</p>
-    <p>q32: ${q32Input}</p>
-    <p>q33: ${q33Input}</p>
-    <p>q34: ${q34Input}</p>
-    <p>q35: ${q35Input}</p>
-
-
-    
-    <p>Message: ${"What type of software solution would you like to develop with DevLead?: " + q11Input + " Mobile, " + q12Input+" Web, " + q13Input + " Authentification, " + q14Input + " Software or Data Migration, " + q15Input + " System or Data Archiving, " +
-    "\nWhat is the current stage of your software development process?: "+ q21Input+" Idea, " + q22Input + " Proof of Concept, " + q23Input + " Prototype, " + q24Input + " Specified or designed Solution, " + q25Input + " MVP, " +
-    "\nDo you need a professional consultation from any of the specialists below?: "+ q31Input+" Project Manager, " + q32Input + " Business Analyst, " + q33Input + "  UI/UX Designer, " + q34Input + " Architect, " + q35Input + " DevOps, "}</p>`;
-
-
+    Do you need a professional consultation from any of the specialists below?:
+    ${q31Input} :Project Manager
+    ${q32Input} :Business Analyst
+    ${q33Input} :UI/UX Designer
+    ${q34Input} :Architect
+    ${q35Input} :DevOps`
 
     document.getElementById("message").value = outputText;
     console.log("test");

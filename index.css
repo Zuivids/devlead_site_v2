@@ -1816,10 +1816,10 @@
   height: 135px;
   margin: var(--dl-space-space-unit);
 }
-.FormButton {
+.formButton {
   width: 213px;
   align-self: center;
-  margin-left: 90px;
+  margin-left: 110px;
   margin-top: var(--dl-space-space-unit);
   background-color: transparent;
   background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
