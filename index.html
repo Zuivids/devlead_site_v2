@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en"
-  ><head
-    ><title>DevLead.lv</title
-    ><link rel=" icon" type="image/png" href="public/favicon.png">
-    <meta property="og:title" content="DevLead.lv" /><meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" /><meta
-      charset="utf-8" /><meta
-      property="twitter:card"
-      content="summary_large_image" /><style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }</style
-    ><style data-tag="default-style-sheet">
+<html lang="en">
+  <head>
+    <title>DevLead.lv</title>
+    <link rel=" icon" type="image/png" href="public/favicon.png">
+    <meta property="og:title" content="DevLead.lv" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" /><meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}
+      body {  margin: 0;}
+      * {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption 
+      {  margin: 0;  padding: 0;}
+      button {  background-color: transparent;}
+      button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
+      button,select {  text-transform: none;}
+      button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}
+      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}
+      button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}
+      a {  color: inherit;  text-decoration: inherit;}
+      input {  padding: 2px 4px;}
+      img {  display: block;}
+      html { scroll-behavior: smooth  }
+      </style>
+      <style data-tag="default-style-sheet">
       html {
         font-family: Arial;
         font-size: 16px;
@@ -26,711 +39,651 @@
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
 
-      }</style
-    ><link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font" /><link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" /></head
-  ><body
-    ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./index.css" rel="stylesheet" /><div class="home-container"
-        ><div data-role="Header" class="home-navbar-container"
-          ><div class="home-navbar"
-            ><a href="index.html" class="home-navlink"
-              ><img
-                alt="image"
-                src="public/logo-200h.png"
-                class="home-image" /></a
-            ><div class="home-links-container"
-              ><a href="#aboutUsSection" id="aboutUs" class="home-about-us-link"
-                >About Us</a
-              ><a href="#servicesSection" class="home-services-link"
-                ><span class="home-text">Services</span><br /></a
-              ><a href="#techStackSection" class="home-tech-stack-link"
-                ><span>Tech Stack</span><br /></a
-              ><a href="#industriesSection" class="home-industreis-link"
-                ><span class="home-text004">Industries</span><br /></a
-              ><a href="#getInTouch" class="home-contact-us-link">Contact Us</a
-              ><a href="pricing.html" class="home-get-pricing button"
-                >Get Pricing</a
-              ></div
-            ><div data-role="BurgerMenu" class="home-burger-menu"
-              ><svg viewBox="0 0 1024 1024" class="home-icon">
-                <path
-                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                ></path></svg></div
-            ><div data-role="MobileMenu" class="home-mobile-menu"
-              ><div class="home-container01"
-                ><span class="Card-Heading home-heading">Logo</span
-                ><div data-role="CloseMobileMenu" class="home-close-menu"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path></svg></div></div
-              ><div class="home-links-container1"
-                ><span class="home-link Navbar-Link">About</span
-                ><span class="home-link1 Navbar-Link">Experience</span
-                ><span class="home-link2 Navbar-Link">Portofolio</span
-                ><span class="Navbar-Link">Contact</span></div
-              ></div
-            ></div
-          ></div
-        ><div class="home-section-separator"></div
-        ><div class="home-section-separator1"></div
-        ><div class="home-container02"
-          ><div class="home-hero"
-            ><div class="home-hero-text-container"
-              ><h1 class="home-heading01"
-                ><span class="home-text006"
-                  >Delivering Value through Cost-effective Software
-                  Development</span
-                ><br class="home-text007" /><br /></h1></div></div></div
-        >
-        
-        
+      }</style>
+      <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+      <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  </head>
+      
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+      <div>
+        <link href="./index.css" rel="stylesheet" />
+
+        <!-- Header -->
+
+        <div class="home-container"><div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <a href="index.html" class="home-navlink">
+              <img alt="image" src="public/logo-200h.png" class="home-image" />
+            </a>
+            <div class="home-links-container">
+              <a href="#aboutUsSection" id="aboutUs" class="home-about-us-link">About Us</a>
+              <a href="#servicesSection" class="home-services-link">
+                <span class="home-text">Services</span><br />
+              </a>
+              <a href="#techStackSection" class="home-tech-stack-link">
+                <span>Tech Stack</span><br />
+              </a>
+              <a href="#industriesSection" class="home-industreis-link">
+                <span class="home-text004">Industries</span><br />
+              </a>
+              <a href="#getInTouch" class="home-contact-us-link">Contact Us</a>
+              <a href="pricing.html" class="home-get-pricing button">Get Pricing</a>
+            </div>
+            <div data-role="BurgerMenu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
+              </svg>
+            </div>
+            <div data-role="MobileMenu" class="home-mobile-menu">
+              <div class="home-container01">
+                <span class="Card-Heading home-heading">Logo</span>
+                <div data-role="CloseMobileMenu" class="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-links-container1">
+                <span class="home-link Navbar-Link">About</span>
+                <span class="home-link1 Navbar-Link">Experience</span>
+                <span class="home-link2 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div class="home-section-separator">
+        </div>
+        <div class="home-section-separator1">
+        </div>
+        <!-- Intro -->
+
+        <div class="home-container02">
+          <div class="home-hero">
+            <div class="home-hero-text-container">
+              <h1 class="home-heading01">
+                <span class="home-text006">Delivering Value through Cost-effective Software Development</span>
+                <br class="home-text007" /><br />
+              </h1>
+            </div>
+          </div>
+        </div> 
+        <!-- Intro -->
         <!-- About us-->
 
-        <div id="aboutUsSection" class="my-home-about-us"
-          ><div class="my-home-max-content-width-container"
-            ><div class="my-home-container03"
-              ><div class="my-home-features"
-                ><h1 class="my-home-text009"><span>About us</span><br /></h1
-                ><div class="my-home-content-container"
-                  ><div class="my-home-about-1"
-                    ><div class="my-home-container04"
-                      ><div class="my-home-container05"
-                        ><div class="my-home-container06"
-                          ><div class="my-home-container07"
-                            ><span class="my-home-text012 aboutUsHeader"
-                              >Who we are</span
-                            ><span class="my-home-text013 aboutUsTextStyle"
-                              ><span
-                                >DevLead is a cutting-edge customer software
-                                development </span
-                              ><span
-                                >company that has been at the forefront of
-                                technology innovation since 2017.</span
-                              ><span
-                                >Born in the digital era and expanded through
-                                the challenging times of Covid-</span
-                              ><span
-                                >19, our company embraces a fully digital
-                                internal environment, enhancing </span
-                              ><span>agility and efficiency.</span></span
-                            ></div
-                          ><div class="my-home-container08"
-                            ><span class="my-home-text019 aboutUsHeader"
-                              >Our Philosophy</span
-                            ><span class="my-home-text020 aboutUsTextStyle"
-                              ><span
-                                >At DevLead, we are committed to sustainability
-                                and </span
-                              ><span
-                                >efficiency. We operate a paperless environment,
-                                with all internal processes </span
-                              ><span
-                                >digitalized and a strong preference for cloud
-                                solutions over traditional data </span
-                              ><span
-                                >centers. This approach not only reduces our
-                                environmental footprint but also </span
-                              ><span
-                                >enhances our operational flexibility.</span
-                              ></span
-                            ></div
-                          ><div class="my-home-container09"
-                            ><span class="my-home-text026 aboutUsHeader"
-                              ><span class="my-home-text027">How We Work</span
-                              ><br /></span
-                            ><span class="my-home-text029 aboutUsTextStyle"
-                              ><span
-                                >Our team specializes in web-based
-                                technologies,employing </span
-                              ><span
-                                >a robust DevOps approach to streamline
-                                development and operations. We </span
-                              ><span
-                                >organize our projects using Agile frameworks,
-                                which allows us to adapt </span
-                              ><span
-                                >rapidly to changes and deliver high-quality
-                                software solutions that meet the </span
-                              ><span>evolving needs of our clients.</span></span
-                            ></div
-                          ></div
-                        ><img
-                          src="public/aboutUsImage.jpg"
-                          alt="image"
-                          class="my-home-image01" /></div></div
-                    ><div class="my-home-container10"
-                      ><span class="my-home-text035 aboutUsHeader"
-                        >Our Approach to Work</span
-                      ><span class="my-home-text036 aboutUsTextStyle"
-                        ><span
-                          >DevLead supports remote working, offering our </span
-                        ><span
-                          >team the flexibility to work from anywhere. This
-                          model has proven effective </span
-                        ><span
-                          >in attracting top talent and maintaining high
-                          productivity levels, making us a </span
-                        ><span
-                          >resilient and forward-thinking partner in software
-                          development.</span
-                        ><br /><span
-                          >By positioning DevLead as an innovative and adaptable
-                          software </span
-                        ><span
-                          >development company, this section highlights our
-                          strengths and unique </span
-                        ><span
-                          >approaches to technology and work environment, making
-                          it appealing for </span
-                        ><span
-                          >potential clients and partners looking for modern and
-                          efficient software&nbsp;</span
-                        ><span>solutions.</span></span
-                      ></div
-                    ></div
-                  ></div
-                ></div
-              ></div
-            ></div
-          ></div>
+        <div id="aboutUsSection" class="my-home-about-us">
+          <div class="my-home-max-content-width-container">
+            <div class="my-home-container03">
+              <div class="my-home-features">
+                <h1 class="my-home-text009"><span>About us</span><br /></h1>
+                <div class="my-home-content-container">
+                  <div class="my-home-about-1">
+                    <div class="my-home-container04">
+                      <div class="my-home-container05">
+                        <div class="my-home-container06">
+                          <div class="my-home-container07">
+                            <span class="my-home-text012 aboutUsHeader">Who we are</span>
+                            <span class="my-home-text013 aboutUsTextStyle">
+                              <span>DevLead is a cutting-edge customer software development </span>
+                              <span>company that has been at the forefront of technology innovation since 2017.</span>
+                              <span>Born in the digital era and expanded through the challenging times of Covid-</span>
+                              <span>19, our company embraces a fully digital internal environment, enhancing </span>
+                              <span>agility and efficiency.</span>
+                            </span>
+                          </div>
+                          <div class="my-home-container08">
+                            <span class="my-home-text019 aboutUsHeader">Our Philosophy</span>
+                            <span class="my-home-text020 aboutUsTextStyle">
+                              <span>At DevLead, we are committed to sustainability and </span>
+                              <span>efficiency. We operate a paperless environment, with all internal processes </span>
+                              <span>digitalized and a strong preference for cloud solutions over traditional data </span>
+                              <span>centers. This approach not only reduces our environmental footprint but also </span>
+                              <span>enhances our operational flexibility.</span>
+                            </span>
+                          </div>
+                          <div class="my-home-container09">
+                            <span class="my-home-text026 aboutUsHeader">
+                              <span class="my-home-text027">How We Work</span><br />
+                            </span>
+                            <span class="my-home-text029 aboutUsTextStyle">
+                              <span>Our team specializes in web-based technologies,employing </span>
+                              <span>a robust DevOps approach to streamline development and operations. We </span>
+                              <span>organize our projects using Agile frameworks, which allows us to adapt </span>
+                              <span>rapidly to changes and deliver high-quality software solutions that meet the </span>
+                              <span>evolving needs of our clients.</span>
+                           </span>
+                          </div>
+                        </div>
+                        <img src="public/aboutUsImage.jpg" alt="image" class="my-home-image01" />
+                      </div>
+                    </div>
+                    <div class="my-home-container10">
+                      <span class="my-home-text035 aboutUsHeader">Our Approach to Work</span>
+                      <span class="my-home-text036 aboutUsTextStyle">
+                        <span>DevLead supports remote working, offering our </span>
+                        <span>team the flexibility to work from anywhere. This model has proven effective </span>
+                        <span>in attracting top talent and maintaining high productivity levels, making us a </span>
+                        <span>resilient and forward-thinking partner in software development.</span>
+                        <br />
+                        <span>By positioning DevLead as an innovative and adaptable software </span>
+                        <span>development company, this section highlights our strengths and unique </span>
+                        <span>approaches to technology and work environment, making it appealing for </span>
+                        <span>potential clients and partners looking for modern and efficient software&nbsp;</span>
+                        <span>solutions.</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- /About us-->
-          
-          <div class="home-unnamed"
-          ><div class="home-max-content-width-container1"
-            ><div class="home-heading-container"
-              ><h1 class="home-text016"
-                >Unleash the Full Potential of Your Business with Our
-                Expertise:</h1
-              ></div
-            ><div class="home-content-container06"
-              ><img
-                alt="image"
-                src="public/Photo2.jpg"
-                loading="eager"
-                class="home-image07"
-              /><div class="home-about-1"
-                ><div class="home-container04"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon04">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text017"
-                    >Custom Software Development</span
-                  ></div
-                ><div class="home-container05"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon06">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text018"
-                    >Seamless Archiving &amp; Data Management</span
-                  ></div
-                ><div class="home-container06"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon08">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text019"
-                    >Effortless System &amp; Data Integration</span
-                  ></div
-                ><div class="home-container07"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon10">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text020"
-                    ><span class="home-text021"
-                      >Reliable Software Maintenance &amp; Support</span
-                    ><br /></span></div
-                ><div class="home-container08"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon12">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text023"
-                    >Data-Driven Insights &amp; Project Management</span
-                  ></div
-                ><div class="home-container09"
-                  ><svg viewBox="0 0 1024 1024" class="home-icon14">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path></svg
-                  ><span class="home-text024"
-                    >Empower Teams with DevOps Practices</span
-                  ></div
-                ></div
-              ></div
-            ></div
-          ></div
-        ><div id="servicesSection" class="home-services1"
-          ><div class="home-max-content-width-container2"
-            ><div class="home-services2"
-              ><div class="home-features1"
-                ><h1 class="home-text025"
-                  ><span>Explore our services</span><br /></h1
-                ><span class="Header home-text028"
-                  >DevLead.lv provides expert IT support, maintenance, and cloud
-                  solutions to keep your business running smoothly.</span
-                ><div class="home-container10"
-                  ><div class="home-card06"
-                    ><div class="home-icon-container06"
-                      ><img
-                        alt="image"
-                        src="public/serviceCustomImage.png"
-                        class="home-image08" /></div
-                    ><div class="home-content-container07"
-                      ><span class="home-text037 Card-Heading"
-                        >Custom Software Development</span
-                      ><span class="home-text037"
-                        ><span>Mobile development</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Web App development</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Cross-platform developmen</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Cloud development</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Database creation and managment</span><br /></span
-                      ><span class="home-text037"
-                        ><span>API integration</span><br /></span
-                      ><br /></span></div
-                    ></div
-                  ><div class="home-card07"
-                    ><div class="home-icon-container07"
-                      ><img
-                        alt="image"
-                        src="public/serviceConsultingImage.png"
-                        class="home-image09" /></div
-                    ><div class="home-content-container08"
-                      ><span class="home-heading08 Card-Heading"
-                        >Audit &amp; Consulting</span
-                      ><span class="home-text037"
-                        ><span>Artificial Intelligence</span><br /></span
-                      ><span class="home-text037"
-                        ><span>UI/UX design</span><br /></span
-                      ><span class="home-text037"
-                        ><span>QA services</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Business analysis</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Marketing of IT</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Solution architecture</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Integration architecture audit</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Performance audit</span
-                      ><br /></span></div></div
-                  ><div class="home-card08"
-                    ><div class="home-icon-container08"
-                      ><img
-                        alt="image"
-                        src="public/serviceDeliveryImage.jpg"
-                        class="home-image10" /></div
-                    ><div class="home-content-container09"
-                      ><span class="home-heading08"
-                        ><span class="home-text061 Card-Heading">Delivery</span
-                        ><br /></span
-                      ><span class="home-text037"
-                        ><span>Project manegment</span><br /></span
-                      ><span class="home-text037"
-                        ><span>CI/CD</span><br /></span
-                      ><span class="home-text037"><span>DevOps practices</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Staff augmentation</span><br /></span></div></div
-                  ><div class="home-card09"
-                    ><div class="home-icon-container09"
-                      ><img
-                        alt="image"
-                        src="public/serviceSupportImage.png"
-                        class="home-image11" /></div
-                    ><div class="home-content-container10"
-                      ><span class="home-heading08 Card-Heading"
-                        >Support &amp; Maintenance</span
-                      ><span class="home-text037"
-                        ><span>IT support and services</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Performance monitoring</span><br /></span
-                      ><span class="home-text037"
-                        ><span>End-of-Life services</span><br /></span
-                      ><span class="home-text037"
-                        ><span>Software updates & upgrades</span
-                        ><br /></span></div></div></div></div></div></div></div
-        ><div id="techStackSection" class="home-tech-stack">
-          <div class="home-max-content-width-container3">
-            <div class="home-heading-container1">
-              <h1 class="Section-Heading home-text087">Technologies we use</h1>
+        <!-- Our Mission -->
+
+          <div class="home-unnamed">
+            <div class="home-max-content-width-container1">
+              <div class="home-heading-container">
+                <h1 class="home-text016">Unleash the Full Potential of Your Business with Our Expertise:</h1>
+              </div>
+              <div class="home-content-container06">
+                <img alt="image" src="public/Photo2.jpg" loading="eager" class="home-image07"/>
+                <div class="home-about-1">
+                  <div class="home-container04">
+                    <svg viewBox="0 0 1024 1024" class="home-icon04">
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span class="home-text017">Custom Software Development</span>
+                  </div>
+                  <div class="home-container05">
+                    <svg viewBox="0 0 1024 1024" class="home-icon06">
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span class="home-text018">Seamless Archiving &amp; Data Management</span>
+                  </div>
+                  <div class="home-container06">
+                    <svg viewBox="0 0 1024 1024" class="home-icon08">
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span class="home-text019">Effortless System &amp; Data Integration</span>
+                  </div>
+                  <div class="home-container07">
+                    <svg viewBox="0 0 1024 1024" class="home-icon10">
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg >
+                    <span class="home-text020">
+                      <span class="home-text021">Reliable Software Maintenance &amp; Support</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-container08">
+                    <svg viewBox="0 0 1024 1024" class="home-icon12">
+                     <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span class="home-text023">Data-Driven Insights &amp; Project Management</span>
+                  </div>
+                  <div class="home-container09">
+                    <svg viewBox="0 0 1024 1024" class="home-icon14">
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span class="home-text024">Empower Teams with DevOps Practices</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="containerTech">
-              <div class="tab_box">
+          </div>
+
+        <!-- /Our Mission -->
+        <!-- Services -->
+        
+          <div id="servicesSection" class="home-services1">
+            <div class="home-max-content-width-container2">
+              <div class="home-services2">
+                <div class="home-features1">
+                  <h1 class="home-text025">
+                    <span>Explore our services</span>
+                    <br />
+                  </h1>
+                  <span class="Header home-text028">
+                    DevLead.lv provides expert IT support, maintenance, and cloud solutions to keep your business running smoothly.
+                  </span>
+                  <div class="home-container10">
+                    <div class="home-card06">
+                      <div class="home-icon-container06">
+                        <img alt="image" src="public/serviceCustomImage.png" class="home-image08" />
+                      </div>
+                    <div class="home-content-container07">
+                      <span class="home-text037 Card-Heading">Custom Software Development</span>
+                        <span class="home-text037">
+                          <span>Mobile development</span><br />
+                        </span>
+                        <span class="home-text037">
+                          <span>Web App development</span><br />
+                        </span>
+                        <span class="home-text037">
+                          <span>Cross-platform developmen</span><br />
+                        </span>
+                        <span class="home-text037">
+                          <span>Cloud development</span><br />
+                        </span>
+                        <span class="home-text037">
+                          <span>Database creation and managment</span><br />
+                        </span>
+                        <span class="home-text037">
+                          <span>API integration</span><br />
+                        </span>
+                        <br />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="home-card07">
+                    <div class="home-icon-container07">
+                      <img alt="image" src="public/serviceConsultingImage.png" class="home-image09" />
+                    </div>
+                    <div class="home-content-container08">
+                      <span class="home-heading08 Card-Heading">Audit &amp; Consulting</span>
+                      <span class="home-text037">
+                        <span>Artificial Intelligence</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>UI/UX design</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>QA services</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Business analysis</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Marketing of IT</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Solution architecture</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Integration architecture audit</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Performance audit</span><br />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="home-card08">
+                    <div class="home-icon-container08">
+                      <img alt="image" src="public/serviceDeliveryImage.jpg" class="home-image10" />
+                    </div>
+                    <div class="home-content-container09">
+                      <span class="home-heading08">
+                        <span class="home-text061 Card-Heading">Delivery</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Project manegment</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>CI/CD</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>DevOps practices</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Staff augmentation</span><br />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="home-card09">
+                    <div class="home-icon-container09">
+                      <img alt="image" src="public/serviceSupportImage.png" class="home-image11" />
+                    </div>
+                    <div class="home-content-container10">
+                      <span class="home-heading08 Card-Heading">Support &amp; Maintenance</span>
+                      <span class="home-text037">
+                        <span>IT support and services</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Performance monitoring</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>End-of-Life services</span><br />
+                      </span>
+                      <span class="home-text037">
+                        <span>Software updates & upgrades</span><br />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        <!-- /Services --> 
+        <!-- TechStack -->
+        
+          <div id="techStackSection" class="home-tech-stack">
+            <div class="home-max-content-width-container3">
+              <div class="home-heading-container1">
+                <h1 class="Section-Heading home-text087">Technologies we use</h1>
+              </div>
+              <div class="containerTech">
+                <div class="tab_box">
                   <button class="tab_btn active">FRONT-END DEVELOPMENT</button>
                   <button class="tab_btn">BACK-END DEVELOPMENT</button>
                   <button class="tab_btn">MOBILE APP DEVELOPMENT</button>
                   <div class="line"></div>
-              </div>    
-              <div class="content_box">
-                    <div class="content active">
-                        <table>
-                            <tr>
-                                <td><h3 class="techStackHeader">TypeScript:</h3></td>
-                                <td><span class="techStackText">A superset of JavaScript that compiles to plain JavaScript; it's used to build robust, large-scale applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">React:</h3></td>
-                                <td><span class="techStackText">A JavaScript library for building user interfaces, typically for web applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">JavaScript:</h3></td>
-                                <td><span class="techStackText">The scripting language used to create and control dynamic website content.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Bootstrap:</h3></td>
-                                <td><span class="techStackText">A front-end framework for developing responsive and mobile-first websites</span> </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="content">
-                        <table>
-                            <tr>
-                                <td><h3 class="techStackHeader">Net Core:</h3> </td>
-                                <td><span class="techStackText">A cross-platform framework for building modern, cloud-based, internet-connected applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Net Core:</h3></td>
-                                <td><span class="techStackText">A cross-platform framework for building modern, cloud-based, internet-connected applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Java:</h3></td>
-                                <td><span class="techStackText">A programming language and computing platform commonly used for enterprise-scale applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">PHP:</h3></td>
-                                <td><span class="techStackText">A server-side scripting language designed for web development but also used as a general-purpose programming language.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">C++:</h3></td>
-                                <td><span class="techStackText">A general-purpose programming language which can be used for backend development.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Python:</h3></td>
-                                <td><span class="techStackText">A programming language that is often used for web development, AI, machine learning, and more.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">PL/SQL:</h3></td>
-                                <td><span class="techStackText">Oracle's procedural extension for SQL and the Oracle relational database.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">NodeJS:</h3></td>
-                                <td><span class="techStackText">A JavaScript runtime built on Chrome's V8 JavaScript engine; used for building fast and scalable network applications.A JavaScript runtime built on Chrome's V8 JavaScript engine; used for building fast and scalable network applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Spring:</h3></td>
-                                <td><span class="techStackText">A comprehensive programming and configuration model for modern Java-based enterprise applications.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Postgre SQL:</h3></td>
-                                <td><span class="techStackText">An open-source relational database management system.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Oracle:</h3></td>
-                                <td><span class="techStackText">A multi-model database management system.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">MS SQL:</h3></td>
-                                <td><span class="techStackText">Microsoft SQL Server, a relational database management system.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">MySQL, MariaDB:</h3></td>
-                                <td><span class="techStackText">Relational database management systems, with MariaDB being a fork of MySQL.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">IBM for AS/400:</h3></td>
-                                <td><span class="techStackText">Refers to IBM's range of software products for their AS/400 (now IBM System i) systems, often used for back-end business logic.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">NO SQL:</h3></td>
-                                <td><span class="techStackText">A category of database management systems that does not require a fixed schema and often avoids join operations.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">SOLR:</h3></td>
-                                <td><span class="techStackText">An open-source enterprise search platform.</span> </td>
-                            </tr>
-                        </table> 
-                    </div>
-                    <div class="content">
-                        <table>
-                            <tr>
-                                <td><h3 class="techStackHeader">Flutter:</h3> </td>
-                                <td><span class="techStackText">A UI toolkit from Google for building natively compiled applications for mobile, web, and desktop from a single codebase.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">JavaScript:</h3></td>
-                                <td> <span class="techStackText">With frameworks like Node.js for the back-end and libraries like React for the front-end.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">TypeScript:</h3></td>
-                                <td><span class="techStackText">Can be used both in front-end and back-end development through Node.js.</span></td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Python:</h3></td>
-                                <td><span class="techStackText">With frameworks like Django and Flask, Python can be used for both back-end logic and serving front-end web pages.</span> </td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Adobe XD:</h3></td>
-                                <td><span class="techStackText">A vector-based user experience design tool for web apps and mobile apps, available for macOS and Windows.</span> </td>
-                            </tr>
-                            <tr>
-                                <td><h3 class="techStackHeader">Figma:</h3></td>
-                                <td><span class="techStackText">A web-based UI and UX design application, with excellent collaborative capabilities.</span> </td>
-                            </tr>
-                        </table>
-                    </div>
+                </div>    
+                <div class="content_box">
+                  <div class="content active">
+                    <table>
+                      <tr>
+                        <td><h3 class="techStackHeader">TypeScript:</h3></td>
+                        <td><span class="techStackText">A superset of JavaScript that compiles to plain JavaScript; it's used to build robust, large-scale applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">React:</h3></td>
+                        <td><span class="techStackText">A JavaScript library for building user interfaces, typically for web applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">JavaScript:</h3></td>
+                        <td><span class="techStackText">The scripting language used to create and control dynamic website content.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Bootstrap:</h3></td>
+                        <td><span class="techStackText">A front-end framework for developing responsive and mobile-first websites</span> </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="content">
+                    <table>
+                      <tr>
+                        <td><h3 class="techStackHeader">Net Core:</h3> </td>
+                        <td><span class="techStackText">A cross-platform framework for building modern, cloud-based, internet-connected applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Net Core:</h3></td>
+                        <td><span class="techStackText">A cross-platform framework for building modern, cloud-based, internet-connected applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Java:</h3></td>
+                        <td><span class="techStackText">A programming language and computing platform commonly used for enterprise-scale applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">PHP:</h3></td>
+                        <td><span class="techStackText">A server-side scripting language designed for web development but also used as a general-purpose programming language.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">C++:</h3></td>
+                        <td><span class="techStackText">A general-purpose programming language which can be used for backend development.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Python:</h3></td>
+                        <td><span class="techStackText">A programming language that is often used for web development, AI, machine learning, and more.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">PL/SQL:</h3></td>
+                        <td><span class="techStackText">Oracle's procedural extension for SQL and the Oracle relational database.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">NodeJS:</h3></td>
+                        <td><span class="techStackText">A JavaScript runtime built on Chrome's V8 JavaScript engine; used for building fast and scalable network applications.A JavaScript runtime built on Chrome's V8 JavaScript engine; used for building fast and scalable network applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Spring:</h3></td>
+                        <td><span class="techStackText">A comprehensive programming and configuration model for modern Java-based enterprise applications.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Postgre SQL:</h3></td>
+                        <td><span class="techStackText">An open-source relational database management system.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Oracle:</h3></td>
+                        <td><span class="techStackText">A multi-model database management system.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">MS SQL:</h3></td>
+                        <td><span class="techStackText">Microsoft SQL Server, a relational database management system.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">MySQL, MariaDB:</h3></td>
+                        <td><span class="techStackText">Relational database management systems, with MariaDB being a fork of MySQL.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">IBM for AS/400:</h3></td>
+                        <td><span class="techStackText">Refers to IBM's range of software products for their AS/400 (now IBM System i) systems, often used for back-end business logic.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">NO SQL:</h3></td>
+                        <td><span class="techStackText">A category of database management systems that does not require a fixed schema and often avoids join operations.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">SOLR:</h3></td>
+                        <td><span class="techStackText">An open-source enterprise search platform.</span> </td>
+                      </tr>
+                    </table> 
+                  </div>
+                  <div class="content">
+                    <table>
+                      <tr>
+                        <td><h3 class="techStackHeader">Flutter:</h3> </td>
+                        <td><span class="techStackText">A UI toolkit from Google for building natively compiled applications for mobile, web, and desktop from a single codebase.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">JavaScript:</h3></td>
+                        <td> <span class="techStackText">With frameworks like Node.js for the back-end and libraries like React for the front-end.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">TypeScript:</h3></td>
+                        <td><span class="techStackText">Can be used both in front-end and back-end development through Node.js.</span></td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Python:</h3></td>
+                        <td><span class="techStackText">With frameworks like Django and Flask, Python can be used for both back-end logic and serving front-end web pages.</span> </td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Adobe XD:</h3></td>
+                        <td><span class="techStackText">A vector-based user experience design tool for web apps and mobile apps, available for macOS and Windows.</span> </td>
+                      </tr>
+                      <tr>
+                        <td><h3 class="techStackHeader">Figma:</h3></td>
+                        <td><span class="techStackText">A web-based UI and UX design application, with excellent collaborative capabilities.</span> </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
-              
+
+        <!-- /TechStack -->
+        <!-- Industries -->
+
+        <div id="industriesSection" class="home-industries">
+          <div class="home-max-content-width-container4">
+            <div class="home-services3">
+              <div class="home-heading-container2">
+                <h1 class="home-text097">
+                  <span class="Section-Heading home-text098">Industries</span><br />
+                </h1>
+              </div>
+              <div class="home-services4">
+                <div class="home-card10">
+                  <div class="home-icon-container10">
+                    <img alt="image" src="public/industriesBankingImage.png" class="home-image12" />
+                  </div>
+                  <div class="home-content-container12">
+                    <span class="home-heading12 Card-Heading">Banking & FinTech</span>
+                    <span class="home-text100 Card-Text">
+                      Comprehensive suite of services, which includes the development of intuitive customer and online payment portals, the streamlining of loan application processes, and the automation of customer agreement generation.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-card11">
+                  <div class="home-icon-container11">
+                    <img alt="image" src="public/industriesRetailImage.png" class="home-image13" />
+                  </div>
+                  <div class="home-content-container13">
+                    <span class="home-heading13">
+                      <span class="Card-Heading">Retail and Ecommerce</span><br />
+                    </span>
+                    <span class="home-text103 Card-Text">
+                      Development and maintenance of e-commerce sites, ensuring businesses flourish online through seamless updates, upgrades, and integrations that enhance functionality and user experience.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-card12">
+                  <div class="home-icon-container12">
+                    <img alt="image" src="public/industriesPublicSectorImage.png" class="home-image14" />
+                  </div>
+                  <div class="home-content-container14">
+                    <span class="home-heading14">
+                      <span class="Card-Heading">Public sector</span><br />
+                    </span>
+                    <span class="home-text106 Card-Text">
+                      Development and maintenance of portals for public services, enhancing accessibility and efficiency through the digitization and digitalization of document flows and archiving. We also integrate robust authentication solutions to ensure secure and seamless user experiences for government and public sector entities.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-card13">
+                  <div class="home-icon-container13">
+                    <img alt="image" src="public/industriesHealthcareImage.png" class="home-image15" />
+                  </div>
+                  <div class="home-content-container15">
+                    <span class="home-heading15">
+                      <span class="Card-Heading">Healtcare</span><br />
+                    </span>
+                    <span class="home-text109 Card-Text">
+                      Development and maintenance of a comprehensive dental clinic customer service management system, incorporating advanced integrations with digital communication channels to effectively inform and engage patients.
+                    </span>
+                  </div>
+                </div>
+                <div class="home-card14">
+                  <div class="home-icon-container14">
+                    <img alt="image" src="public/industriesLogisticsImage.png" class="home-image16" />
+                  </div>
+                  <div class="home-content-container16">
+                    <span class="home-heading16">
+                      <span class="Card-Heading">Logistics</span><br />
+                    </span>
+                    <span class="home-text112 Card-Text">
+                      Implementation of solutions and configuration of workflows that support the efficient flow of goods from warehouses to consumers
+                    </span>
+                  </div>
+                </div>
+                <div class="home-card15">
+                  <div class="home-icon-container15">
+                    <img alt="image" src="public/industriesTelecomImage.png" class="home-image17" />
+                  </div>
+                  <div class="home-content-container17">
+                    <span class="home-heading17">
+                      <span class="Card-Heading">Telecom</span><br />
+                    </span>
+                    <span class="home-text115">
+                      Development and maintenance of various integrations designed to provide a wide range of digital communication services, including IP telephony.
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        ><div id="industriesSection" class="home-industries"
-          ><div class="home-max-content-width-container4"
-            ><div class="home-services3"
-              ><div class="home-heading-container2"
-                ><h1 class="home-text097"
-                  ><span class="Section-Heading home-text098">Industries</span
-                  ><br /></h1></div
-              ><div class="home-services4"
-                ><div class="home-card10"
-                  ><div class="home-icon-container10"
-                    ><img
-                      alt="image"
-                      src="public/industriesBankingImage.png"
-                      class="home-image12" /></div
-                  ><div class="home-content-container12"
-                    ><span class="home-heading12 Card-Heading"
-                      >Banking & FinTech</span
-                    ><span class="home-text100 Card-Text"
-                      >Comprehensive suite of services, which includes the development of intuitive 
-customer and online payment portals, the streamlining of loan application 
-processes, and the automation of customer agreement generation.</span
-                    ></div
-                  ></div
-                ><div class="home-card11"
-                  ><div class="home-icon-container11"
-                    ><img
-                      alt="image"
-                      src="public/industriesRetailImage.png"
-                      class="home-image13" /></div
-                  ><div class="home-content-container13"
-                    ><span class="home-heading13"
-                      ><span class="Card-Heading">Retail and Ecommerce</span><br /></span
-                    ><span class="home-text103 Card-Text"
-                      >Development and maintenance of e-commerce sites, ensuring businesses flourish 
-online through seamless updates, upgrades, and integrations that enhance 
-functionality and user experience.</span
-                    ></div
-                  ></div
-                ><div class="home-card12"
-                  ><div class="home-icon-container12"
-                    ><img
-                      alt="image"
-                      src="public/industriesPublicSectorImage.png"
-                      class="home-image14" /></div
-                  ><div class="home-content-container14"
-                    ><span class="home-heading14"
-                      ><span class="Card-Heading">Public sector</span
-                      ><br /></span
-                    ><span class="home-text106 Card-Text"
-                      >Development and maintenance of portals for public services, enhancing 
-accessibility and efficiency through the digitization and digitalization of document 
-flows and archiving. We also integrate robust authentication solutions to ensure 
-secure and seamless user experiences for government and public sector entities.</span
-                    ></div
-                  ></div
-                ><div class="home-card13"
-                  ><div class="home-icon-container13"
-                    ><img
-                      alt="image"
-                      src="public/industriesHealthcareImage.png"
-                      class="home-image15" /></div
-                  ><div class="home-content-container15"
-                    ><span class="home-heading15"
-                      ><span class="Card-Heading">Healtcare</span><br /></span
-                    ><span class="home-text109 Card-Text"
-                      >Development and maintenance of a comprehensive dental clinic customer service 
-management system, incorporating advanced integrations with digital 
-communication channels to effectively inform and engage patients.</span
-                    ></div
-                  ></div
-                ><div class="home-card14"
-                  ><div class="home-icon-container14"
-                    ><img
-                      alt="image"
-                      src="public/industriesLogisticsImage.png"
-                      class="home-image16" /></div
-                  ><div class="home-content-container16"
-                    ><span class="home-heading16"
-                      ><span class="Card-Heading">Logistics</span><br /></span
-                    ><span class="home-text112 Card-Text"
-                      >Implementation of solutions and configuration of workflows that support the 
-efficient flow of goods from warehouses to consumers</span
-                    ></div
-                  ></div
-                ><div class="home-card15"
-                  ><div class="home-icon-container15"
-                    ><img
-                      alt="image"
-                      src="public/industriesTelecomImage.png"
-                      class="home-image17" /></div
-                  ><div class="home-content-container17"
-                    ><span class="home-heading17"
-                      ><span class="Card-Heading">Telecom</span
-                      ><br /></span
-                    ><span class="home-text115"
-                      >Development and maintenance of various integrations designed to provide a wide 
-range of digital communication services, including IP telephony.</span
-                    ></div
-                  ></div
-                ></div
-              ></div
-            ></div
-          ></div
-        ><div class="home-section-separator2"></div
-        ><div class="home-section-separator3"></div
-        ><div id="getInTouch" class="home-get-in-touch"
-          ><h1 class="home-text125 Section-Heading">Contact Us</h1
-          ><div class="home-container17"
-            ><div class="home-container18"
-              ><span class="home-text126"
-                ><span>Registration number :</span><br /></span
-              ><span class="home-text129">40103985300</span
-              ><span class="home-text130">Phone number:</span
-              ><span class="home-text131">+371 20036541</span
-              ><span class="home-text132">Email :</span
-              ><span class="home-text133">info@devlead.lv</span
-              ><span class="home-text134">Office address :</span
-              ><span class="home-text135"
-                ><span>Mazā Krasta Street 83</span><br /><span
-                  >Riga, LV-1003</span
-                ></span
-              ></div
-            ><div class="home-container19"
-              ><iframe
-                src="https://maps.google.com/maps?ll=56.93684,24.1477549&amp;q=Mazā Krasta iela 83&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                class="home-iframe"
-              ></iframe></div>
-          <div class="FormDiv">
-                <span class="FormTitle">Contact us for a free consultation</span>
-            <div class="home-container21">
-              <form type="_blank" id='info-form' action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
+
+        <!-- /Industries -->
+        <div class="home-section-separator2"></div>
+        <div class="home-section-separator3"></div>
+        <!-- Contact Us -->
+
+        <div id="getInTouch" class="home-get-in-touch">
+          <h1 class="home-text125 Section-Heading">Contact Us</h1>
+          <div class="home-container17">
+            <div class="home-container18">
+              <span class="home-text126">
+                <span>Registration number :</span><br />
+              </span>
+              <span class="home-text129">40103985300</span>
+              <span class="home-text130">Phone number:</span>
+              <span class="home-text131">+371 20036541</span>
+              <span class="home-text132">Email :</span>
+              <span class="home-text133">info@devlead.lv</span>
+              <span class="home-text134">Office address :</span>
+              <span class="home-text135">
+                <span>Mazā Krasta Street 83</span><br />
+                <span>Riga, LV-1003</span>
+              </span>
+            </div>
+            <div class="home-container19">
+              <iframe src="https://maps.google.com/maps?ll=56.93684,24.1477549&amp;q=Mazā Krasta iela 83&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" class="home-iframe"></iframe>
+            </div>
+            <div class="FormDiv">
+              <span class="FormTitle">Contact us for a free consultation</span>
+              <div class="home-container21">
+                <form type="_blank" id='info-form' action="https://formsubmit.co/martins.zaimis@gmail.com" method="POST">
+          
+                  <input type="hidden" name="_subject" value="New email from DevLead.lv">
+                  <div class="home-container22">
+                    <input type="text" id="name" name="name" placeholder="Name*" class="home-textinput input" required/>
+                    <input type="text" id="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
+                  </div>
+
+                  <div class="home-container23">
+                    <input type="text" id="number" placeholder="Number*" class="home-textinput2 input" required/>
+                    <input type="text" id="company" placeholder="Company*" class="home-textinput3 input" required/>
+                  </div>
+
+                  <div class="home-container24">
+                    <input type="text" id="description" placeholder="Please describe your project requirements*" class="home-textinput4 input" required/>
+                  </div>
+
+                  <input  type="hidden" id="message" name="message" />
+
+                  <button type="submit" onclick="formSubmit()" class="formButton button">
+                  <span class="home-text140"><span>Send request</button></span></span>
         
-                <input type="hidden" name="_subject" value="New email from DevLead.lv">
-                <div class="home-container22">
-                  <input type="text" id="name" name="name" placeholder="Name*" class="home-textinput input" required/>
-                   <input type="text" id="email" name="email" placeholder="Corporate E-mail*" class="home-textinput1 input" required/>
-                </div>
-
-                <div class="home-container23">
-                  <input type="text" id="number" placeholder="Number*" class="home-textinput2 input" required/>
-                  <input type="text" id="company" placeholder="Company*" class="home-textinput3 input" required/>
-                 </div>
-
-                <div class="home-container24">
-                  <input type="text" id="description" placeholder="Please describe your project requirements*" class="home-textinput4 input" required/>
-                </div>
-
-                <input  type="hidden" id="message" name="message" />
-
-                <button type="submit" onclick="formSubmit()" class="formButton button">
-                <span class="home-text140"><span>Send request</button></span></span>
-      
-              </form>
-            <div>
-
+                </form>
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
         </div>
 
-        
-                    <div class="home-section-separator4"></div
-        ><div class="home-footer-container"
-          ><div class="home-footer"
-            ><div class="home-container25"
-              ><span class="home-text143"
-                >Mazā krasta iela 83, Rīga LV-1003</span
-              ><a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link4"
-                >+37120036541</a
-              ><a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link5"
-                ><span>Info@devlead.lv</span><br /></a></div
-            ><div class="home-copyright-container"
-              ><span class="home-link6"
-                >Copyright © 2024. SIA DevLead. All rights reserved</span
-              ></div
-            ></div
-          ></div
-        ></div
-      ></div
-    >
-    <script src="script.js"></script>
+        <!-- /Contact Us -->
+        <div class="home-section-separator4"></div>
+        <!-- Footer -->
+
+        <div class="home-footer-container">
+          <div class="home-footer">
+            <div class="home-container25">
+              <span class="home-text143">Mazā krasta iela 83, Rīga LV-1003</span>
+              <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link4">+37120036541</a>
+              <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link5">
+                <span>Info@devlead.lv</span><br />
+              </a>
+            </div>
+            <div class="home-copyright-container">
+              <span class="home-link6">Copyright © 2024. SIA DevLead. All rights reserved</span>
+            </div>
+          </div>
+        </div>
+        <!-- /Footer -->
+
+      </div>    <!-- Lieks? -->
+      </div>
+      <script src="script.js"></script>
   </body>
 </html>

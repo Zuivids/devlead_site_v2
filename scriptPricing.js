@@ -58,6 +58,8 @@ function formSubmitPricing() {
     document.getElementById("info-form2").submit();
 
   }
+
+  
   const dialog = document.getElementById("pricing-dialog")
   const wrapper = document.querySelector(".wrapper")
   function showPricingDialog(){
