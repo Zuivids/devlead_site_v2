@@ -12,49 +12,48 @@ function formSubmitPricing() {
   }
   function getPricing() {
 
-    const q11Input = document.getElementById("checkbox1-1").value;
-    const q12Input = document.getElementById("checkbox1-2").value;
-    const q13Input = document.getElementById("checkbox1-3").value;
-    const q14Input = document.getElementById("checkbox1-4").value;
-    const q15Input = document.getElementById("checkbox1-5").value;
+    const q11Checked = document.getElementById("checkbox1-1").checked;
+    const q12Checked = document.getElementById("checkbox1-2").checked;
+    const q13Checked = document.getElementById("checkbox1-3").checked;
+    const q14Checked = document.getElementById("checkbox1-4").checked;
+    const q15Checked = document.getElementById("checkbox1-5").checked;
 
-    const q21Input = document.getElementById("checkbox2-1").value;
-    const q22Input = document.getElementById("checkbox2-2").value;
-    const q23Input = document.getElementById("checkbox2-3").value;
-    const q24Input = document.getElementById("checkbox2-4").value;
-    const q25Input = document.getElementById("checkbox2-5").value;
+    const q21Checked = document.getElementById("checkbox2-1").checked;
+    const q22Checked = document.getElementById("checkbox2-2").checked;
+    const q23Checked = document.getElementById("checkbox2-3").checked;
+    const q24Checked = document.getElementById("checkbox2-4").checked;
+    const q25Checked = document.getElementById("checkbox2-5").checked;
 
-    const q31Input = document.getElementById("checkbox3-1").value;
-    const q32Input = document.getElementById("checkbox3-2").value;
-    const q33Input = document.getElementById("checkbox3-3").value;
-    const q34Input = document.getElementById("checkbox3-4").value;
-    const q35Input = document.getElementById("checkbox3-5").value;
+    const q31Checked = document.getElementById("checkbox3-1").checked;
+    const q32Checked = document.getElementById("checkbox3-2").checked;
+    const q33Checked = document.getElementById("checkbox3-3").checked;
+    const q34Checked = document.getElementById("checkbox3-4").checked;
+    const q35Checked = document.getElementById("checkbox3-5").checked;
 
 
     const outputText = `
     What type of software solution would you like to develop with DevLead?:
-    ${q11Input} :Mobile
-    ${q12Input} :Web
-    ${q13Input} :Authentification
-    ${q14Input} :Software or Data Migration
-    ${q15Input} :System or Data Archiving
+    ${q11Checked ? ": Mobile" : ""}
+    ${q12Checked ? ": Web" : ""}
+    ${q13Checked ? ": Authentification" : ""}
+    ${q14Checked ? ": Software or Data Migration" : ""}
+    ${q15Checked ? ": System or Data Archiving" : ""}
 
     What is the current stage of your software development process?:
-    ${q21Input} :Idea
-    ${q22Input} :Proof of Concept
-    ${q23Input} :Prototype
-    ${q24Input} :Specified or designed Solution
-    ${q25Input} :MVP
+    ${q21Checked ? ": Idea" : ""}
+    ${q22Checked ? ": Proof of Concept" : ""}
+    ${q23Checked ? ": Prototype" : ""}
+    ${q24Checked ? ": Specified or designed Solution" : ""}
+    ${q25Checked ? ": MVP" : ""}
 
     Do you need a professional consultation from any of the specialists below?:
-    ${q31Input} :Project Manager
-    ${q32Input} :Business Analyst
-    ${q33Input} :UI/UX Designer
-    ${q34Input} :Architect
-    ${q35Input} :DevOps`
+    ${q31Checked ? ": Project Manager" : ""}
+    ${q32Checked ? ": Business Analyst" : ""}
+    ${q33Checked ? ": UI/UX Designer" : ""}
+    ${q34Checked ? ": Architect" : ""}
+    ${q35Checked ? ": DevOps" : ""}`
 
     document.getElementById("message").value = outputText;
-    console.log("test");
 
     document.getElementById("info-form2").submit();
 
