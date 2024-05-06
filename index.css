@@ -6,6 +6,35 @@
   align-items: center;
   flex-direction: column;
 }
+.techStackHeader {
+  color: #27af82;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: bold;
+}
+.techStackText {
+  color: #ffff;
+  padding-left: 10px;
+  font-size: 17px;
+  font-family: Overpass;
+  vertical-align: middle;
+}
+.techStackHeader2 {
+  color: #27af82;
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: bold;
+}
+.techStackText2 {
+  color: #ffff;
+  font-size: 15px;
+  font-family: Overpass;
+  vertical-align: middle;
+}
+
 .my-home-max-content-width-container {
   width: 100%;
   height: 907px;
@@ -95,6 +124,7 @@
 }
 .my-home-container07 {
   display: flex;
+  margin-left: 5%;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
@@ -107,6 +137,7 @@
   margin: var(--dl-space-space-fourunits);
 }
 .my-home-container08 {
+  margin-left: 5%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -120,6 +151,7 @@
   margin: var(--dl-space-space-fourunits);
 }
 .my-home-container09 {
+  margin-left: 5%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -142,6 +174,7 @@
   border-radius: var(--dl-radius-radius-radius8);
 }
 .my-home-container10 {
+  margin-left: 2.5%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -708,7 +741,7 @@
   border-radius: var(--dl-radius-radius-radius4);
 }
 .home-about-1 {
-  width: 1032px;
+  width: 100%;
   display: flex;
   padding: var(--dl-space-space-fourunits);
   align-self: stretch;
@@ -922,7 +955,7 @@
   justify-content: center;
 }
 .home-image08 {
-  width: 200px;
+  width: 80%;
   object-fit: cover;
 }
 .home-content-container07 {
@@ -979,7 +1012,7 @@
   justify-content: center;
 }
 .home-image09 {
-  width: 200px;
+  width: 80%;
   object-fit: cover;
 }
 .home-content-container08 {
@@ -1035,7 +1068,7 @@
   justify-content: center;
 }
 .home-image10 {
-  width: 200px;
+  width: 80%;
   object-fit: cover;
 }
 .home-content-container09 {
@@ -1082,7 +1115,7 @@
   justify-content: center;
 }
 .home-image11 {
-  width: 200px;
+  width: 80%;
   object-fit: cover;
 }
 .home-content-container10 {
@@ -1305,10 +1338,9 @@
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);
   padding-left: var(--dl-space-space-tripleunit);
-  margin-bottom: var(--dl-space-space-fiveunits);
+  /* margin-bottom: var(--dl-space-space-fiveunits); */
   padding-right: var(--dl-space-space-tripleunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
 }
 .home-heading-container2 {
   width: 45%;
@@ -1738,14 +1770,14 @@
 }
 .home-container19 {
   flex: 0 0 auto;
-  width: 554px;
+  width: 30% ;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .home-iframe {
-  width: 554px;
+  width: 90% !important;
   height: 450px;
   box-shadow: 5px 5px 10px 0px #696060;
   margin-left: var(--dl-space-space-fourunits);
@@ -2092,10 +2124,11 @@
     border-radius: var(--dl-radius-radius-radius4);
   }
   .home-heading-container {
-    width: 1329px;
+    width: 100%;
   }
   .home-text016 {
-    font-size: 35px;
+    font-size: 30px;
+    margin-left: 20%;
     font-family: Poppins;
     text-transform: uppercase;
   }
@@ -2103,15 +2136,16 @@
     width: 1426px;
   }
   .home-image07 {
-    width: 577px;
-    height: 437px;
+    display: flex;
+    width: 32% !important;
+    height: 90% !important;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
     border-color: var(--dl-color-gray-black);
     border-width: 1px;
     border-radius: var(--dl-radius-radius-radius4);
   }
   .home-about-1 {
-    width: 871px;
+    width: 50% !important;
     height: 451px;
   }
   .home-text017 {
@@ -2318,12 +2352,8 @@
     max-width: auto;
   }
   .home-services3 {
-    left: 0px;
-    right: 0px;
     width: 100%;
-    bottom: -174px;
-    height: 1847px;
-    margin: auto;
+    height: 100%;
     position: absolute;
     max-width: 100%;
   }
@@ -2412,6 +2442,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  
   .my-home-features {
     padding-top: 0px;
   }
@@ -2440,6 +2471,10 @@
     letter-spacing: 1px;
     text-transform: none;
     text-decoration: none;
+  }
+  .home-image07{
+    width: 30% !important;
+    display: flex;
   }
   .my-home-text013 {
     width: 90%;
@@ -2527,25 +2562,25 @@
     width: 100%;
   }
   .home-about-us-link {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-services-link {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-text {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-tech-stack-link {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-industreis-link {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-text004 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-contact-us-link {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-container02 {
     height: 100%;
@@ -2573,14 +2608,15 @@
     text-align: center;
   }
   .home-text016 {
-    width: 1111px;
+    width: 100%;
     height: 100px;
-    font-size: 30px;
+    margin-left: 0%;
+    font-size: 25px;
     text-align: center;
     font-family: Poppins;
   }
   .home-about-1 {
-    width: 581px;
+    width: 40% !important;
   }
   .home-text028 {
     text-align: center;
@@ -2637,9 +2673,8 @@
     height: 100%;
   }
   .home-services3 {
-    width: auto;
-    height: 1847px;
-    max-width: auto;
+    width: 100%;
+    height: 100%;
   }
   .home-services4 {
     width: auto;
@@ -2694,11 +2729,22 @@
     padding-bottom: var(--dl-space-space-tripleunit);
   }
   .home-container18 {
-    width: auto;
+    width: 30%;
     margin-left: var(--dl-space-space-doubleunit);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
   .home-container19 {
-    width: auto;
+    visibility: hidden;
+    width: 0px !important;
+    flex: 0 0 auto;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .home-iframe {
     width: 396px;
@@ -2737,14 +2783,40 @@
   }
 }
 @media (max-width: 991px) {
+  .home-navbar {
+    position: relative;
+  }
+  .home-links-container {
+    display: none;
+  }
+  .home-burger-menu {
+    display: flex;
+    padding: var(--dl-space-space-halfunit);
+    margin-left: var(--dl-space-space-tripleunit);
+    border-radius: var(--dl-radius-radius-radius4);
+    background-color: var(--dl-color-gray-black);
+  }
+  .home-links-container {
+    display: none;
+  }
+  .home-icon {
+    fill: var(--dl-color-gray-white);
+  }
+  .home-icon {
+  width: 36px;
+  height: 36px;
+  }
+  .home-link6 {
+    text-align: left;
+    font-family: "Arial Black";
+    text-transform: capitalize;
+    font-size: 13px;
+}
   .my-home-text009 {
     text-align: center;
   }
   .my-home-image01 {
     height: 580px;
-  }
-  .home-links-container {
-    align-self: flex-start;
   }
   .home-about-us-link {
     font-size: 14px;
