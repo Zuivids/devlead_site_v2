@@ -20,7 +20,7 @@ function formSubmit() {
     const companyInput = document.getElementById("company").value;
     const descriptionInput = document.getElementById("description").value;
   
-    const outputText = `Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
+    const outputText = `${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}`;
   
     document.getElementById("message").value = outputText;
     document.getElementById("info-form").submit();

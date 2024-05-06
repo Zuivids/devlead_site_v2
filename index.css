@@ -166,7 +166,7 @@
   background-image: linear-gradient(to left, #bdc3c7 0%, #2c3e50 100%);
 }
 .home-navbar {
-  width: 1554px;
+  width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxcontent);
   align-items: center;

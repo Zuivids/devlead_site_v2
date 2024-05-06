@@ -4,17 +4,17 @@ function formSubmitPricing() {
     const companyInput = document.getElementById("company").value;
     const descriptionInput = document.getElementById("description").value;
   
-    const outputText = `Message: ${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}</p>`;
+    const outputText = `${"Tel: " + numberInput + "\nCompany: " + companyInput + "\nMessage: " + descriptionInput}`;
   
     document.getElementById("message2").value = outputText;
     document.getElementById("info-form").submit();
   
   }
   function getPricing() {
-
-    const q11Checked = document.getElementById("checkbox1-1").checked;
+  
+        const q11Checked = document.getElementById("checkbox1-1").checked;
     const q12Checked = document.getElementById("checkbox1-2").checked;
-    const q13Checked = document.getElementById("checkbox1-3").checked;
+            const q13Checked = document.getElementById("checkbox1-3").checked;
     const q14Checked = document.getElementById("checkbox1-4").checked;
     const q15Checked = document.getElementById("checkbox1-5").checked;
 
