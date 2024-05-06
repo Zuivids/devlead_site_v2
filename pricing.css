@@ -354,6 +354,7 @@
   align-items: flex-start;
   justify-content: center;
 }
+
 .pricing-text24 {
   font-size: 25px;
   font-style: normal;
@@ -1237,7 +1238,7 @@
     font-family: "Arial Black";
     text-transform: capitalize;
     font-size: 13px;
-}
+  }
 }
 @media (max-width: 767px) {
   .pricing-links-container {

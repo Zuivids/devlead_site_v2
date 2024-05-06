@@ -356,7 +356,7 @@
 }
 .home-container02 {
   width: 100%;
-  height: 1041px;
+  height: 1030px;
   display: flex;
   align-items: center;
   background-size: cover;
@@ -1960,12 +1960,6 @@
     border-color: var(--dl-color-gray-black);
     border-width: 1px;
   }
-  .home-navbar {
-    width: 100%;
-  }
-  .home-image {
-    width: 200px;
-  }
   .home-links-container {
     align-self: center;
   }
@@ -2249,11 +2243,6 @@
   }
   .home-heading09 {
     margin-bottom: var(--dl-space-space-fourunits);
-  }
-  .home-text037 {
-    font-style: normal;
-    font-family: Overpass;
-    font-weight: 400;
   }
   .home-text040 {
     font-style: normal;
@@ -2557,9 +2546,6 @@
     font-style: normal;
     font-family: Overpass;
     font-weight: 700;
-  }
-  .home-navbar {
-    width: 100%;
   }
   .home-about-us-link {
     font-size: 16px;
