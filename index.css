@@ -15,6 +15,22 @@
   font-family: Poppins;
   font-style: bold;
 }
+.containerTech {
+  width: 1200px;
+  height: 800px;
+  background-image: linear-gradient(to left, #bdc3c7 0%, #69798a 100%);
+  padding: 30px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+.Section-Heading {
+  font-size: 48px;
+  font-family: Overpass;
+  font-weight: 900;
+  line-height: 1.22;
+  text-transform: none;
+  text-decoration: none;
+}
 .techStackText {
   color: #ffff;
   padding-left: 10px;
@@ -2543,6 +2559,22 @@
   }
   .home-about-us-link {
     font-size: 16px;
+  }
+  .containerTech {
+    width: 1000px !important;
+    height: 850px !important;
+    background-image: linear-gradient(to left, #bdc3c7 0%, #69798a 100%);
+    padding: 30px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+  }
+  .Section-Heading {
+    font-size: 38px !important;
+    font-family: Overpass;
+    font-weight: 900;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
   }
   .home-services-link {
     font-size: 16px;
