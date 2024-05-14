@@ -1,4 +1,11 @@
-
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+   const sidebar = document.querySelector('.sidebar')
+   sidebar.style.display = 'none'
+}
 function formSubmitPricing() {
     const numberInput = document.getElementById("number").value;
     const companyInput = document.getElementById("company").value;
@@ -12,9 +19,9 @@ function formSubmitPricing() {
   }
   function getPricing() {
   
-        const q11Checked = document.getElementById("checkbox1-1").checked;
+    const q11Checked = document.getElementById("checkbox1-1").checked;
     const q12Checked = document.getElementById("checkbox1-2").checked;
-            const q13Checked = document.getElementById("checkbox1-3").checked;
+    const q13Checked = document.getElementById("checkbox1-3").checked;
     const q14Checked = document.getElementById("checkbox1-4").checked;
     const q15Checked = document.getElementById("checkbox1-5").checked;
 
@@ -31,7 +38,7 @@ function formSubmitPricing() {
     const q35Checked = document.getElementById("checkbox3-5").checked;
 
 
-    const outputText = `
+    let outputText = `
     What type of software solution would you like to develop with DevLead?:
     ${q11Checked ? ": Mobile" : ""}
     ${q12Checked ? ": Web" : ""}

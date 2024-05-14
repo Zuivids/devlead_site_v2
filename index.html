@@ -86,25 +86,24 @@
               <a href="pricing.html" class="home-get-pricing button">Get Pricing</a>
             </div>
             <div data-role="BurgerMenu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon">
-                <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
-              </svg>
+              <button onclick=showSidebar()>
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
+                </svg>
+              </button>
             </div>
-            <div data-role="MobileMenu" class="home-mobile-menu">
-              <div class="home-container01">
-                <span class="Card-Heading home-heading">Logo</span>
-                <div data-role="CloseMobileMenu" class="home-close-menu">
-                  <svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="home-links-container1">
-                <span class="home-link Navbar-Link">About</span>
-                <span class="home-link1 Navbar-Link">Experience</span>
-                <span class="home-link2 Navbar-Link">Portofolio</span>
-                <span class="Navbar-Link">Contact</span>
-              </div>
+            <div class="sidebar">
+              <nav>
+                <ul>
+                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                  <li><a href="index.html#aboutUsSection" class="pricing-navbar-burger-li"><span>ABOUT US</span></a></li>
+                  <li><a href="index.html#servicesSection" class="pricing-navbar-burger-li"><span>SERVICES</span></a></li>
+                  <li><a href="index.html#techStackSection" class="pricing-navbar-burger-li"><span>TECH STACK</span></a></li>
+                  <li><a href="index.html#industriesSection" class="pricing-navbar-burger-li"><span>INDUSTRIES</span></a></li>
+                  <li><a href="index.html#getInTouch" class="pricing-navbar-burger-li"><span>CONTACT US</span></a></li>
+                  <li><a href="pricing.html" class="pricing-navbar-burger-li"><span class="sidebar-get-pricing-button">   GET PRICING   </span></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

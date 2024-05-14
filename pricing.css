@@ -529,6 +529,9 @@
   background-color: #d9d9d9;
 }
 .pricing-text56 {
+  font-size: 35px;
+  font-style: normal;
+  font-family: "Poppins";
   margin-top: var(--dl-space-space-tenunits);
   margin-left: 0px;
   margin-right: 0px;
@@ -1065,6 +1068,7 @@
   }
   .home-text139 {
     font-size: 25px !important;
+    visibility: hidden;
     font-style: normal;
     font-family: "Poppins";
     font-weight: 700;
@@ -1208,7 +1212,7 @@
     padding: var(--dl-space-space-halfunit);
     margin-left: var(--dl-space-space-tripleunit);
     border-radius: var(--dl-radius-radius-radius4);
-    background-color: var(--dl-color-gray-black);
+    background-color: rgb(28, 83, 97);
   }
   .pricing-links-container {
     display: none;
@@ -1239,7 +1243,7 @@
     padding: var(--dl-space-space-halfunit);
     margin-left: var(--dl-space-space-tripleunit);
     border-radius: var(--dl-radius-radius-radius4);
-    background-color: var(--dl-color-gray-black);
+    background-color: rgb(28, 83, 97);
   }
   .pricing-icon {
     fill: var(--dl-color-gray-white);
