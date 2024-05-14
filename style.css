@@ -279,10 +279,10 @@ width: 100%;
   font-family: "Poppins";
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
-  display: flex; /* Makes the element a flex container */
-  align-items: center; /* Aligns child elements vertically */
-  justify-content: center; /* Centers child elements horizontally */
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   text-transform: uppercase;
   margin-bottom: 5%;
 }
