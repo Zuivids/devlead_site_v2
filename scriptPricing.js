@@ -38,44 +38,29 @@ function formSubmitPricing() {
     const q35Checked = document.getElementById("checkbox3-5").checked;
 
     let outputText = `
-    What type of software solution would you like to develop with DevLead?:\n
-  `;
 
-  // Build the output string with line breaks and colons
-  outputText += q11Checked ? "- Mobile\n" : "";
-  outputText += q12Checked ? "- Web\n" : "";
-  outputText += q13Checked ? "- Authentification\n" : "";
-  outputText += q14Checked ? "- Software or Data Migration\n" : "";
-  outputText += q15Checked ? "- System or Data Archiving\n" : "";
+    What type of software solution would you like to develop with DevLead?:
+    ${q11Checked ? ": Mobile" : ""}
+    ${q12Checked ? ": Web" : ""}
+    ${q13Checked ? ": Authentification" : ""}
+    ${q14Checked ? ": Software or Data Migration" : ""}
+    ${q15Checked ? ": System or Data Archiving" : ""}
 
+    What is the current stage of your software development process?:
+    ${q21Checked ? ": Idea" : ""}
+    ${q22Checked ? ": Proof of Concept" : ""}
+    ${q23Checked ? ": Prototype" : ""}
+    ${q24Checked ? ": Specified or designed Solution" : ""}
+    ${q25Checked ? ": MVP" : ""}
 
-    // let outputText = `
+    Do you need a professional consultation from any of the specialists below?:
+    ${q31Checked ? ": Project Manager" : ""}
+    ${q32Checked ? ": Business Analyst" : ""}
+    ${q33Checked ? ": UI/UX Designer" : ""}
+    ${q34Checked ? ": Architect" : ""}
+    ${q35Checked ? ": DevOps" : ""}`
 
-    // What type of software solution would you like to develop with DevLead?:
-    // ${q11Checked ? ": Mobile" : ""}
-    // ${q12Checked ? ": Web" : ""}
-    // ${q13Checked ? ": Authentification" : ""}
-    // ${q14Checked ? ": Software or Data Migration" : ""}
-    // ${q15Checked ? ": System or Data Archiving" : ""}
-
-    // What is the current stage of your software development process?:
-    // ${q21Checked ? ": Idea" : ""}
-    // ${q22Checked ? ": Proof of Concept" : ""}
-    // ${q23Checked ? ": Prototype" : ""}
-    // ${q24Checked ? ": Specified or designed Solution" : ""}
-    // ${q25Checked ? ": MVP" : ""}
-
-    // Do you need a professional consultation from any of the specialists below?:
-    // ${q31Checked ? ": Project Manager" : ""}
-    // ${q32Checked ? ": Business Analyst" : ""}
-    // ${q33Checked ? ": UI/UX Designer" : ""}
-    // ${q34Checked ? ": Architect" : ""}
-    // ${q35Checked ? ": DevOps" : ""}`
-
-    // document.getElementById("message").value = outputText;
-
-    const encodedText = encodeURIComponent(outputText);
-    document.getElementById("message").value = encodedText;
+    document.getElementById("message").value = outputText;
 
     document.getElementById("info-form2").submit();
 
